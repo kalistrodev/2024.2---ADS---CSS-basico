@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Formulário</h1>
+    </header>
+</body>
+
+<main>
+    <form class="formulario" action="">
+        <div class="field">
+            <label for="name">Nome</label>
+            <input id="name" name="nome" type="text" placeholder="Maria de Oliveira">
+        </div>
+        
+        <div class="field">
+            <label for="sexo">Sexo</label>
+            <div>
+                <input id="sexo_m" name="sexo" type="radio" value="M"> <label for="sexo_m">Masculino</label>
+                <input id="sexo_f" name="sexo" type="radio" value="F"> <label for="sexo_f">Feminino</label>
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="ac">Acre</option>
+                <option value="ro">Rondônia</option>
+            </select>
+        </div>
+        
+        <div class="field">
+            <label for="atendimento-especial">Descreva o atendimento especial</label>
+            <textarea name="atendimento-especial" id="atendimento-especial" rows="10"></textarea>
+        </div>
+        
+        <div>
+            <input type="checkbox" name="termos" id="termos"> <span>Estou de acordo com os termos de serviço</span>
+        </div>
+        
+        <div>
+            <input class="button" type="submit" value="Realizar inscrição">
+        </div>
+    </form>
+</main>
+
+</html>
